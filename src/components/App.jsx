@@ -68,20 +68,6 @@ const App = () => {
 
 
 
-  // const addContact = (contact) => {
-  //   if (checkDuplicates(contact.name)) {
-  //     return;
-  //   };
-
-  //   setContacts(contact => ({ id: nanoid(), ...contact }, ...contacts));
-  // }
-
-
-
-  // const deleteContact = (id) => {
-  //   setContacts(contacts => (contacts.filter(contact => contact.id !== id)))
-  // }
-
 
   const changeFilter = (e) => {
     setFilter(e.currentTarget.value)
