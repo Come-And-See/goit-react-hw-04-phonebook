@@ -57,15 +57,30 @@ const App = () => {
       return;
     };
 
-    setContacts([{ id: nanoid(), ...contact }, ...contacts]);
+    setContacts(contacts => [{ id: nanoid(), ...contact }, ...contacts]);
   }
 
 
 
   const deleteContact = (id) => {
-    setContacts(contacts.filter(contact => contact.id !== id))
+    setContacts(contacts => contacts.filter(contact => contact.id !== id))
   }
 
+
+
+  // const addContact = (contact) => {
+  //   if (checkDuplicates(contact.name)) {
+  //     return;
+  //   };
+
+  //   setContacts(contact => ({ id: nanoid(), ...contact }, ...contacts));
+  // }
+
+
+
+  // const deleteContact = (id) => {
+  //   setContacts(contacts => (contacts.filter(contact => contact.id !== id)))
+  // }
 
 
   const changeFilter = (e) => {
